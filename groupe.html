@@ -2,16 +2,17 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Votre profil</title>
+    <title>Groupe</title>
     <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style-nav.css"/>
     <link rel="stylesheet" href="css/style-footer.css">
+    <link rel="stylesheet" href="css/style-groupe.css">
     <script src="https://kit.fontawesome.com/666d79cf59.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light navbar-toggleable-sm">
         <div class="container">
-            <a href="accueil.html" class="navbar-brand">
+            <a href="#" class="navbar-brand">
                 <img src="img/logo.png" class="img-fluid" width="160px" />
             </a>
             <form class="w-50 mw-100 mx-auto" method="GET" action="#">
@@ -44,7 +45,7 @@
                         <img src="img/avatar.png" id="dml_profil" class="img-fluid border border-secondary rounded-circle dropdown-toggle" width="50px" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"/>
                         <div class="dropdown-menu" aria-labelledby="dml_profil">
                             <a class="dropdown-item" href="#">Profil</a>
-                            <a class="dropdown-item" href="#">Paramètres</a>
+                            <a class="dropdown-item" href="profil-editer.html">Paramètres</a>
                             <a class="dropdown-item" href="accueil.html">Se déconnecter</a>
                         </div>
                     </li>
@@ -53,54 +54,53 @@
         </div>
     </nav>
 
-    <section class="py-5 text-left bg-light">
+    <section class="py-5 text-left bg-light" id="groupe">
         <div class="container">
-            <div class="row bg-white shadow">
-                <div class="col-md-4 p-5 my-3 border-right">
-                    <h4 class="mb-2 pb-3">
-                        Paramètres personnels
-                    </h4>
-                    <ul class="list-group border-0">
-                        <li class="list-group-item border-0"><a class="active" href="#">Profil</a></li>
-                        <li class="list-group-item border-0"><a href="securite-param.html">Sécurité</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-8 p-5 my-3">
-                    <form>
-                        <h2>
-                            Profil
-                        </h2>
-                        
-                        <div class="form-groupe my-3">
-                            <label class="control-label" for="nom">Nom : </label>
-                            <input id="nom" name="nom" type="text" class="form-control"  required>
-                        </div>
-                        <div class="form-groupe my-3">
-                            <label class="control-label" for="prenom">Prenom : </label>
-                            <input id="prenom" name="prenom" type="text" class="form-control"  required>
-                        </div>
-                        <div class="form-groupe my-3">
-                            <label class="control-label" for="email">E-mail : </label>
-                            <input id="adresse" name="email" type="text" class="form-control" >
-                        </div>
-                        <div class="form-group my-3">
-                            <label for="niveau">Niveau :</label>
-                            <select id="niveau" class="form-control">
-                              <option selected>Bisd 1</option>
-                              <option>Bisd 2</option>
-                            </select>
-                        </div>
-                        <div class="form-groupe my-3">
-                            <label for="image">Image :</label>
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="image" name="image">
-                                <label class="custom-file-label" for="image">Choisir image</label>
+            <div class="row bg-white shadow-sm">
+                <div class="col p-0 border">
+                    <div id="cover"></div>
+                    <div class="container p-4">
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                <h2 class="mb-3">
+                                    BISD groupe
+                                </h2>
+                                <p class="lead mt-2">
+                                    Members : 18
+                                </p>
+                            </div>
+                            <div class="col-2">
+                                <a class="px-5 py-2 rounded-pill btn btn-primary text-white m-auto">JOIN</a>
                             </div>
                         </div>
-                        <div class="form-groupe mt-5">
-                            <button type="submit" class="btn btn-primary btn-lg form-control">Modifier</button>
-                        </div>  
-                    </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div id="newPost" class="bg-white p-3 shadow-sm border">
+                                <form>
+                                    <h3 class="mb-3">
+                                        New post
+                                    </h3>
+                                    <textarea class="form-control my-2" name="content" rows="4" placeholder="Share your ideas"></textarea>
+                                    <div class="custom-file my-2">
+                                        <input type="file" name="image" class="custom-file-input" id="postImage">
+                                        <label class="custom-file-label" for="postImage">Choose Image</label>
+                                    </div>
+                                    <input type="text" name="tags" class="form-control my-2" placeholder="Tags ex: #c #php..."/>
+                                    <button type="submit" class="btn btn-primary form-control my-2">Publish</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <h2>HHHH</h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
