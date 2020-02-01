@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Nouveau groupe</title>
-    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style-nav.css"/>
     <link rel="stylesheet" href="css/style-footer.css">
     <script src="https://kit.fontawesome.com/666d79cf59.js" crossorigin="anonymous"></script>
@@ -53,82 +53,39 @@
         </div>
     </nav>
 
-    <section id="welcome" class="py-5">
+    <section class="py-5 text-left bg-light" id="newGroupe">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center text-white pt-md-5">
-                    <h1 class="display-2 mt-5 pt-5">
-                        Do What You Drean of...
-                    </h1>
-                    <p class="lead">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore sequi quibusdam eius debitis, nulla suscipit quidem pariatur perspiciatis non. Libero fugiat sed autem architecto soluta consequuntur ex possimus amet quisquam.
-                    </p>
-                    <div class="mt-5">
-                        <a href="#" class="btn btn-primary btn-lg text-white">
-                            S'inscrire
-                        </a>
-                    </div>
+                <div class="col-md-5 p-5 my-3 bg-white shadow">
+                    <h2 class="mb-2 pb-3">
+                        Nouveau groupe
+                    </h2>
+                    <ul>
+                        <li class="py-2">Lorem ipsum, dolor sit amet consectetur</li>
+                        <li class="py-2">Aspernatur ratione fugit inventore ducimus quia rem nesciunt. Facere minus velit perferendis eveniet perspiciatis quidem fugit?</li>
+                        <li class="py-2">Praesentium ea consequatur culpa nostrum sunt quaerat totam odio assumenda asperiores deleniti, vitae et dignissimos dolor dolorem eius?</li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-5 text-center bg-faded">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="mb-5">
-                        <h1 class="text-primary pb-3">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </h1>
-                        <p class="lead pb-3">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet similique nisi accusantium eos iure doloribus. Delectus dolorum officia et qui, asperiores repellendus ea dolore eveniet culpa rem. Quaerat, aspernatur! Tempore.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="properties" class="py-5 text-center">
-        <div class="container">
-            <div class="row text-white text-left">
-                <div class="col-xs-12 col-md-6 col-lg-3">
-                    <div class="card">
-                        <img class="card-img-top" src="img/article.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Consectetur adipisicing</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis doloribus.</p>
+                <div id="forme" class="col-md-5 offset-sm-1 p-5 my-3 bg-white shadow">
+                    <form>
+                        <h2 class="mb-5 pt-5 pb-3">
+                            Nouveau groupe
+                        </h2>
+                        <div class="form-groupe my-3">
+                            <label class="control-label" for="label">Nom de groupe</label>
+                            <input id="nom" name="nom" type="text" class="form-control" placeholder="Enter une label" required>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-3">
-                    <div class="card">
-                        <img class="card-img-top" src="img/article.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Temporibus voluptates.</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="form-group my-3">
+                            <label for="etat">État</label>
+                            <select id="etat" class="form-control">
+                              <option selected>Public</option>
+                              <option>Privé</option>
+                            </select>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-3">
-                    <div class="card">
-                        <img class="card-img-top" src="img/article.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Aperiam a explicabo</h5>
-                          <p class="card-text">Quisquam laboriosam iste est aliquam! Aliquid quos eligendi, saepe eum praesentium amet fugit.</p>
+                        <div class="form-groupe mt-5">
+                            <button type="submit" class="btn btn-primary btn-lg form-control">Créer</button>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-3">
-                    <div class="card">
-                        <img class="card-img-top" src="img/article.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Mollitia pariatur</h5>
-                          <p class="card-text">Lorem ipsum dolor sit, porro expedita alias obcaecati ullam beatae.</p>
-                        </div>
-                    </div>
-                </div>
+                    </form>
                 </div>
             </div>
         </div>
