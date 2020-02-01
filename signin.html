@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>S'inscrire</title>
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style-nav.css"/>
+    <link rel="stylesheet" href="css/style-login.css">
+    <link rel="stylesheet" href="css/style-footer.css">
+</head>
+<body>
+    <nav class="navbar navbar-light navbar-toggleable-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand mr-auto">
+                <img src="img/logo.png" class="img-fluid" width="160px" />
+            </a>
+            <a href="#" class="btn btn-outline-secondary navbar-btn mr-2">
+                Se connecter
+            </a>
+            <a href="#" class="btn btn-primary navbar-btn">
+                S'inscrire
+            </a>
+        </div>
+    </nav>
+
+    <section id="login">
+        <div class="container">
+            <div class="row">
+                <div id="forme" class="col-md-6 offset-sm-6 p-5 my-3">
+                    <form>
+                        <h2 class="mb-5 pt-5 pb-3">
+                            S'inscrire
+                        </h2>
+                        <div class="form-groupe my-3">
+                            <label class="control-label" for="nom">Email address:</label>
+                            <input id="nom" name="nom" type="text" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-groupe my-3">
+                            <label class="control-label" for="prenom">Email address:</label>
+                            <input id="prenom" name="prenom" type="text" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-groupe my-3">
+                            <label class="control-label" for="adresse">Email address:</label>
+                            <input id="adresse" name="adresse" type="text" class="form-control" placeholder="Enter your name">
+                        </div>
+                        <div class="form-groupe my-3">
+                            <div class="row">
+                                <div class="col-4">
+                                    <label class="control-label" for="code_postale">Email address:</label>
+                                    <input id="code_postale" name="code_postale" type="number" class="form-control" placeholder="Enter your name">
+                                </div>
+                                <div class="col-8">
+                                    <label class="control-label" for="ville">Email address:</label>
+                                    <input id="ville" name="ville" type="text" class="form-control" placeholder="Enter your name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-groupe my-3">
+                            <label class="control-label" for="email">Email address:</label>
+                            <input id="tel" name="tel" type="tel" class="form-control" placeholder="Enter your name">
+                        </div>
+                        <div class="form-groupe my-3">
+                            <label class="control-label" for="email">Email address:</label>
+                            <div class="row">
+                                <div class="col-8 mx-0">
+                                    <input id="email" name="email" type="text" class="form-control" placeholder="Enter your name" required>
+                                </div>
+                                <div class="col-4 mx-0">
+                                    <input id="email_part" type="text" class="form-control" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-groupe my-3">
+                            <label class="control-label" for="mot_passe">Email address:</label>
+                            <input id="mot_passe" name="mot_passe" type="password" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-groupe mt-5">
+                            <button type="submit" class="btn btn-primary btn-lg form-control">S'inscrire</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5 class="text-secondary">
+                        Si vous possédez déjà un compte. <a href="#" class="_link">Se connecter</a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="border-top border-bottom bg-light">
+            <div class="container">
+                <div class="row my-3">
+                    <span class="lead mr-auto my-auto">
+                        <a class="_link" href="#">A propos</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row my-3">
+                <img src="img/logo.png" class="img-fluid mr-3" width="160px" />
+                <span class="lead mr-auto my-auto">
+                    Copyright © 2020
+                </span>
+                <img src="img/ensa-tanger.png" class="img-fluid" width="80px" />
+            </div>
+        </div>
+        <div class="bar"></div>
+    </footer>
+
+    <script src="js/signin.js"></script>
+</body>
+</html>
