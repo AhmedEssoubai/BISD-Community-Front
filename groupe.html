@@ -36,13 +36,13 @@
                         <a href="accueil.html" class="nav-link">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Groupes</a>
+                        <a href="#" class="nav-link active">Groupes</a>
                     </li>
                     <li class="nav-item">
                         <a href="utilisateurs.html" class="nav-link">Utilisateurs</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <img src="img/avatar.png" id="dml_profil" class="img-fluid border border-secondary rounded-circle dropdown-toggle" width="50px" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"/>
+                        <img src="img/avatar.png" id="dml_profil" class="img-fluid border border-secondary rounded-circle dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"/>
                         <div class="dropdown-menu" aria-labelledby="dml_profil">
                             <a class="dropdown-item" href="#">Profil</a>
                             <a class="dropdown-item" href="profil-editer.html">Paramètres</a>
@@ -77,14 +77,15 @@
                 </div>
             </div>
             <div class="row mt-4">
-                <div class="container">
+                <div class="container px-0">
                     <div class="row">
                         <div class="col-md-8">
                             <div id="newPost" class="bg-white p-3 shadow-sm border">
-                                <form>
+                                <form method="POST" action="#">
                                     <h3 class="mb-3">
                                         New post
                                     </h3>
+                                    <input type="text" name="title" class="form-control my-2" placeholder="Titre"/> 
                                     <textarea class="form-control my-2" name="content" rows="4" placeholder="Share your ideas"></textarea>
                                     <div class="custom-file my-2">
                                         <input type="file" name="image" class="custom-file-input" id="postImage">
@@ -94,10 +95,84 @@
                                     <button type="submit" class="btn btn-primary form-control my-2">Publish</button>
                                 </form>
                             </div>
+                            <!-- POST 1 -->
+                            <div id="post1" class="bg-white rounded my-5 shadow-sm border">
+                                <div class="p-3 d-flex align-items-center">
+                                    <a href="#"><img src="img/avatar.png" alt="profile image" class="avatare img-fluid rounded-circle"/></a>
+                                    <div class="ml-3 d-flex flex-column">
+                                        <a class="_link" href="#">Ahmed Essoubai</a>
+                                        <a class="_sec_link" href="#"><span>BISD</span></a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="img/post.jpeg" class="card-img-top" alt="post image">
+                                    <div class="card-body">
+                                        <div class="pb-3">
+                                            <a class="icon mr-3" href="#">
+                                                <i class="fa fa-heart text-grey active" aria-hidden="true"></i>
+                                            </a>
+                                            <a class="icon" href="#">
+                                                <i class="fa fa-bookmark-o text-grey" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                        <h5 class="card-title">Unde laborum quasi porro ea, sint quibusdam dignissimos!</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">10 likes</h6>
+                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi eum neque, dicta, facilis quam dolorum sunt dolore vitae dignissimos architecto ut laboriosam magnam similique. Et amet fugit tempore facilis.</p>
+                                        <p class="card-text"><small class="text-muted">24 SEPTEMBRE 2019</small></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#"><small class="text-muted">10 commintes</small></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- POST 2 -->
+                            <div id="post2" class="bg-white rounded my-5 shadow-sm border">
+                                <div class="p-3 d-flex align-items-center">
+                                    <a href="#"><img src="img/avatar.png" alt="profile image" class="avatare img-fluid rounded-circle"/></a>
+                                    <div class="ml-3 d-flex flex-column">
+                                        <a class="_link" href="#">Ahmed Essoubai</a>
+                                        <a class="_sec_link" href="#"><span>BISD</span></a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="img/post.jpeg" class="card-img-top" alt="post image">
+                                    <div class="card-body">
+                                        <div class="pb-3">
+                                            <a class="icon mr-3" href="#">
+                                                <i class="fa fa-heart-o text-grey" aria-hidden="true"></i>
+                                            </a>
+                                            <a class="icon" href="#">
+                                                <i class="fa fa-bookmark text-grey active" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                        <h5 class="card-title">Soluta ipsum dolor sit, amet consectetur adipisicing elit.</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">3 likes</h6>
+                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat incidunt corrupti itaque ea architecto blanditiis quasi consequuntur deserunt eveniet quisquam dolorem fuga expedita libero dolor veniam, debitis eos recusandae odio!</p>
+                                        <p class="card-text"><small class="text-muted">01 SEPTEMBRE 2019</small></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#"><small class="text-muted">2 commintes</small></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <!--Groupes list-->
                         <div class="col-md-4">
-                            <div class="card">
-                                <h2>HHHH</h2>
+                            <div class="bg-white py-3 shadow-sm border">
+                                <h5 class="mx-3">Votre groupes</h5>
+                                <div class="list-group py-3">
+                                    <a href="#" class="list-group-item d-flex align-items-center">
+                                        <img class="img-fluid groupe-icon mr-3" src="img/group-0.png"/>
+                                        BISD
+                                    </a>
+                                    <a href="#" class="list-group-item d-flex align-items-center">
+                                        <img class="img-fluid groupe-icon mr-3" src="img/group-3.png"/>
+                                        ISIL
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="_link px-3">Show all</a>
+                                </div>
                             </div>
                         </div>
                     </div>
