@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Ahmed Essoubai - Profil</title>
+    <title>Signets</title>
     <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style-nav.css"/>
     <link rel="stylesheet" href="css/style-footer.css">
@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light navbar-toggleable-sm">
         <div class="container">
-            <a href="#" class="navbar-brand">
+            <a href="accueil.html" class="navbar-brand">
                 <img src="img/logo.png" class="img-fluid" width="160px" />
             </a>
             <form class="w-50 mw-100 mx-auto" method="GET" action="#">
@@ -36,7 +36,7 @@
                         <a href="accueil.html" class="nav-link">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a href="groupes-invitations.html" class="nav-link">Groupes</a>
+                        <a href="groupes-invitations.html" class="nav-link active">Groupes</a>
                     </li>
                     <li class="nav-item">
                         <a href="utilisateurs.html" class="nav-link">Utilisateurs</a>
@@ -44,8 +44,8 @@
                     <li class="nav-item dropdown">
                         <img src="img/avatar.png" id="dml_profil" class="img-fluid border border-secondary rounded-circle dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"/>
                         <div class="dropdown-menu" aria-labelledby="dml_profil">
-                            <a class="dropdown-item" href="#">Profil</a>
-                            <a class="dropdown-item" href="signets.html">Signets</a>
+                            <a class="dropdown-item" href="profil.html">Profil</a>
+                            <a class="dropdown-item" href="#">Signets</a>
                             <a class="dropdown-item" href="profil-editer.html">Paramètres</a>
                             <a class="dropdown-item" href="accueil.html">Se déconnecter</a>
                         </div>
@@ -57,23 +57,13 @@
 
     <section class="py-5 text-left bg-light" id="groupe">
         <div class="container">
-            <div class="row bg-white shadow-sm">
-                <div class="col p-0 border">
-                    <div id="cover"></div>
-                    <div class="p-4">
-                        <img id="profil-avatar" src="img/avatar.png" class="img-fluid rounded-circle">
-                        <h2 id="name" class="my-3">
-                            Ahmed Essoubai
-                        </h2>
-                    </div>
-                </div>
-            </div>
+            <h2 class="mb-5">Vos posts enregistrés</h2>
             <div class="row mt-4">
                 <div class="container px-0">
                     <div class="row">
-                        <div class="col-md-8">
-                            <!-- POST 1 -->
-                            <div id="post1" class="bg-white rounded mb-5 shadow-sm border">
+                        <!-- POST 1 -->
+                        <div class="col-md-4 px-2 mb-5">
+                            <div id="post1" class="bg-white rounded shadow-sm border">
                                 <div class="p-3 d-flex align-items-center">
                                     <a href="#"><img src="img/avatar.png" alt="profile image" class="avatare img-fluid rounded-circle"/></a>
                                     <div class="ml-3 d-flex flex-column">
@@ -84,83 +74,78 @@
                                 <div class="card">
                                     <img src="img/post.jpeg" class="card-img-top" alt="post image">
                                     <div class="card-body">
-                                        <div class="pb-3">
-                                            <a class="icon mr-3" href="#">
-                                                <i class="fa fa-heart text-grey active" aria-hidden="true"></i>
-                                            </a>
-                                            <a class="icon" href="#">
-                                                <i class="fa fa-bookmark-o text-grey" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
                                         <h5 class="card-title">Unde laborum quasi porro ea, sint quibusdam dignissimos!</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted">10 J'aime</h6>
-                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi eum neque, dicta, facilis quam dolorum sunt dolore vitae dignissimos architecto ut laboriosam magnam similique. Et amet fugit tempore facilis.</p>
                                         <p class="card-text"><small class="text-muted">24 SEPTEMBRE 2019</small></p>
                                     </div>
                                     <div class="card-footer">
-                                        <a href="post.html"><small class="text-muted">10 commentaires</small></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- POST 2 -->
-                            <div id="post2" class="bg-white rounded my-5 shadow-sm border">
-                                <div class="p-3 d-flex align-items-center">
-                                    <a href="#"><img src="img/avatar.png" alt="profile image" class="avatare img-fluid rounded-circle"/></a>
-                                    <div class="ml-3 d-flex flex-column">
-                                        <a class="_link" href="#">Ahmed Essoubai</a>
-                                        <a class="_sec_link" href="#"><span>BISD</span></a>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img src="img/post.jpeg" class="card-img-top" alt="post image">
-                                    <div class="card-body">
-                                        <div class="pb-3">
-                                            <a class="icon mr-3" href="#">
-                                                <i class="fa fa-heart-o text-grey" aria-hidden="true"></i>
-                                            </a>
-                                            <a class="icon" href="#">
-                                                <i class="fa fa-bookmark text-grey active" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                        <h5 class="card-title">Soluta ipsum dolor sit, amet consectetur adipisicing elit.</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted">3 J'aime</h6>
-                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat incidunt corrupti itaque ea architecto blanditiis quasi consequuntur deserunt eveniet quisquam dolorem fuga expedita libero dolor veniam, debitis eos recusandae odio!</p>
-                                        <p class="card-text"><small class="text-muted">01 SEPTEMBRE 2019</small></p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <a href="#"><small class="text-muted">2 commentaires</small></a>
+                                        <a href="post.html"><small class="text-muted">Voir post</small></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!--Groupes list-->
-                        <div class="col-md-4">
-                            <div class="bg-white py-3 shadow-sm border">
-                                <h5 class="mx-3">Votre groupes</h5>
-                                <div class="list-group py-3">
-                                    <a href="groupe.html" class="list-group-item d-flex align-items-center">
-                                        <img class="img-fluid groupe-icon mr-3" src="img/group-0.png"/>
-                                        BISD
-                                    </a>
-                                    <a href="#" class="list-group-item d-flex align-items-center">
-                                        <img class="img-fluid groupe-icon mr-3" src="img/group-3.png"/>
-                                        ISIL
-                                    </a>
+                        <!-- POST 2 -->
+                        <div class="col-md-4 px-2 mb-5">
+                            <div id="post1" class="bg-white rounded shadow-sm border">
+                                <div class="p-3 d-flex align-items-center">
+                                    <a href="#"><img src="img/avatar.png" alt="profile image" class="avatare img-fluid rounded-circle"/></a>
+                                    <div class="ml-3 d-flex flex-column">
+                                        <a class="_link" href="#">Ahmed Essoubai</a>
+                                        <a class="_sec_link" href="#"><span>BISD</span></a>
+                                    </div>
                                 </div>
-                                <div class="text-center">
-                                    <a href="groupes-appartiens.html" class="_link px-3">Afficher tous</a>
+                                <div class="card">
+                                    <img src="img/post.jpeg" class="card-img-top" alt="post image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Post Title</h5>
+                                        <p class="card-text"><small class="text-muted">01 SEPTEMBRE 2019</small></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#"><small class="text-muted">Voir post</small></a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="bg-white py-3 my-4 shadow-sm border">
-                                <h5 class="mx-3">Groupes que vous avez créer</h5>
-                                <div class="list-group py-3">
-                                    <a href="groupe.html" class="list-group-item d-flex align-items-center">
-                                        <img class="img-fluid groupe-icon mr-3" src="img/group-0.png"/>
-                                        BISD
-                                    </a>
+                        </div>
+                        <!-- POST 3 -->
+                        <div class="col-md-4 px-2 mb-5">
+                            <div id="post3" class="bg-white rounded shadow-sm border">
+                                <div class="p-3 d-flex align-items-center">
+                                    <a href="#"><img src="img/avatar.png" alt="profile image" class="avatare img-fluid rounded-circle"/></a>
+                                    <div class="ml-3 d-flex flex-column">
+                                        <a class="_link" href="#">Ahmed Essoubai</a>
+                                        <a class="_sec_link" href="#"><span>BISD</span></a>
+                                    </div>
                                 </div>
-                                <div class="text-center">
-                                    <a href="groupes-possede.html" class="_link px-3">Afficher tous</a>
+                                <div class="card">
+                                    <img src="img/post.jpeg" class="card-img-top" alt="post image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Soluta ipsum dolor sit, amet consectetur adipisicing elit.</h5>
+                                        <p class="card-text"><small class="text-muted">01 SEPTEMBRE 2019</small></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#"><small class="text-muted">Voir post</small></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- POST 4 -->
+                        <div class="col-md-4 px-2 mb-5">
+                            <div id="post4" class="bg-white rounded shadow-sm border">
+                                <div class="p-3 d-flex align-items-center">
+                                    <a href="#"><img src="img/avatar.png" alt="profile image" class="avatare img-fluid rounded-circle"/></a>
+                                    <div class="ml-3 d-flex flex-column">
+                                        <a class="_link" href="#">Ahmed Essoubai</a>
+                                        <a class="_sec_link" href="#"><span>BISD</span></a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="img/post.jpeg" class="card-img-top" alt="post image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Consequuntur exercitationem doloribus eum debitis suscipit velit, modi rem ut esse eveniet.</h5>
+                                        <p class="card-text"><small class="text-muted">01 SEPTEMBRE 2019</small></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#"><small class="text-muted">Voir post</small></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
